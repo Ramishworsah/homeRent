@@ -1,30 +1,29 @@
 # HomeRentApp
+<img src="./client/src/assets/logofull.png" style="margin-bottom:40px; width:400px"/>
 
-HomeRentApp is a full-stack web application designed to simplify the process of finding and managing rental properties. Built with modern technologies, it offers a seamless experience for both tenants and landlords.
+### Rentify is a marketplace for people in search for houses for rent in major indian cities. It allows renters/property owners to list their properties on the page, and tenants can reach out to them using this platform.
 
-## Features
+## Tech Stack
 
-- **User Authentication**: Secure login and registration using JWT (JSON Web Tokens).
-- **Property Listings**: Browse and search for available rental properties with filters.
-- **Property Management**: Landlords can add, update, and remove property listings.
-- **Image Upload**: Upload property images using **Cloudinary** and **Multer**.
-- **Email Notifications**: Send emails using **Nodemailer** for booking confirmations and updates.
-- **Responsive Design**: Built with **Tailwind CSS** for a modern and responsive UI.
-- **State Management**: Managed using React's context API or Redux (if applicable).
+#### Rentify is a Full-Stack Web Application developed with <ins>Mongo, Express, React, Node (MERN) Stack</ins>
+<div style="font-size:20px">
+<img width="28" src="https://cdn.simpleicons.org/mongodb/"/>
+<img width="28" src="https://cdn.simpleicons.org/express/white"/>
+<img width="28" src="https://cdn.simpleicons.org/react/"/>
+<img width="28" src="https://cdn.simpleicons.org/nodedotjs/"/>
+</div>
 
-## Technologies Used
+#### Alongwith <ins>Tailwind CSS</ins> and <ins>Ant Design</ins> styling libraries
+<div style="font-size:20px">
+<img width="28" src="https://cdn.simpleicons.org/tailwindcss/"/>
+<img width="28" src="https://cdn.simpleicons.org/antdesign/"/>
+</div>
 
-### Frontend
-- **React.js**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for styling.
-- **Axios**: For making HTTP requests to the backend.
-
-### Backend
-- **Node.js**: A JavaScript runtime for building the backend.
-- **Express.js**: A web framework for Node.js.
-- **MongoDB**: A NoSQL database for storing application data.
-- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB.
-
+#### And Cloudinary & EmailJS for Image Storage and Mailing Service respectively
+<div style="font-size:20px">
+<img width="28" src="https://cdn.simpleicons.org/cloudinary/"/>
+<img width="28" src="https://cdn.simpleicons.org/minutemailer/"/>
+</div>
 ### Additional Tools
 - **JWT (JSON Web Tokens)**: For user authentication and authorization.
 - **Multer**: For handling file uploads.
