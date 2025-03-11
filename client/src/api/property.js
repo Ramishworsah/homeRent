@@ -1,7 +1,7 @@
 
 export const getAllProperties = async ()=>{
     try {
-        const response = await fetch('https://rentify-server-harshpx.vercel.app/api/properties',{
+        const response = await fetch('http://localhost:3000/api/properties',{
             method: 'GET',
         });
         return response.json();
@@ -12,7 +12,7 @@ export const getAllProperties = async ()=>{
 
 export const postProperty = async (property,user)=>{
     try {
-        const response = await fetch('https://rentify-server-harshpx.vercel.app/api/properties/create',{
+        const response = await fetch('http://localhost:3000/api/properties/create',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ export const postProperty = async (property,user)=>{
 
 export const updateProperty = async (id,data,user)=>{
     try {
-        const response = await fetch(`https://rentify-server-harshpx.vercel.app/api/properties/${id}`,{
+        const response = await fetch(`http://localhost:3000/api/properties/${id}`,{
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,24 +42,25 @@ export const updateProperty = async (id,data,user)=>{
     }
 }
 
-export const uploadPropertyImage = async (id,formData,user)=>{
+export const uploadPropertyImage = async (id, formData, user) => {
     try {
-        const response = await fetch(`https://rentify-server-harshpx.vercel.app/api/properties/uploadimage/${id}`,{
-            method: 'PUT',
+        const response = await fetch(`http://localhost:3000/api/properties/uploadimage/${id}`, {
+            method: "PUT",
             headers: {
-                'Authorization': `Bearer ${user?.token}`
+                Authorization: `Bearer ${user?.token}`,
             },
             body: formData,
         });
-        return response.json();
+        return await handleResponse(response);
     } catch (error) {
-        
+        console.error("Error uploading image:", error);
+        return null;
     }
-}
+};
 
 export const deleteProperty = async (id,user)=>{
     try {
-        const response = await fetch(`https://rentify-server-harshpx.vercel.app/api/properties/${id}`,{
+        const response = await fetch(`http://localhost:3000/api/properties/${id}`,{
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user?.token}`
@@ -73,7 +74,7 @@ export const deleteProperty = async (id,user)=>{
 
 export const likeProperty = async(id,user)=>{
     try {
-        const response = await fetch(`https://rentify-server-harshpx.vercel.app/api/properties/like/${id}`,{
+        const response = await fetch(`http://localhost:3000/api/properties/like/${id}`,{
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${user?.token}`
@@ -87,7 +88,7 @@ export const likeProperty = async(id,user)=>{
 
 export const dislikeProperty = async(id,user)=>{
     try {
-        const response = await fetch(`https://rentify-server-harshpx.vercel.app/api/properties/dislike/${id}`,{
+        const response = await fetch(`http://localhost:3000/api/properties/dislike/${id}`,{
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${user?.token}`

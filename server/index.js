@@ -15,7 +15,7 @@ connectDB();
 
 app.use(cors(
     {
-        origin: ['https://rentify-harshpx.vercel.app','http://localhost:5173'],
+        origin: ['http://localhost:3000','http://localhost:5173'],
         allowedHeaders: ['Content-Type', 'Authorization'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         credentials: true
@@ -34,5 +34,5 @@ const port = process.env.PORT || 5000;
 const server = http.createServer(app);
 
 server.listen(port, ()=>{
-    console.log(`Server is running on port:`,`${port}`.yellow.bold);
+    console.log(`Server is running on port:`,`http://localhost:${port}`.yellow.bold);
 })

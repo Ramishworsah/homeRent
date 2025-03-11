@@ -25,6 +25,8 @@ const Find = () => {
         {value: 'Kochi', label: 'Kochi'},
         {value: 'Trivendrum', label: 'Trivendrum'},
         {value: 'Indore', label: 'Indore'},
+        {value: 'vadodara', label: 'vadodara'},
+        
     ];
 
     const roomOptions = [
@@ -119,7 +121,7 @@ const Find = () => {
                     />
                 </div>
             </ConfigProvider>
-            <div className='p-2 w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2'>
+            <div className='grid w-full grid-cols-2 gap-2 p-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'>
                 {list?.map((property,index)=>(
                     <PropertyCard key={index} property={property}/>
                 ))}

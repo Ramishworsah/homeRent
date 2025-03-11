@@ -10,7 +10,7 @@ const EditProperty = ({property,setModalOpen}) => {
     const { user, properties, setProperties, loading, setLoading } = useContext(AppContext);
     const [fileList, setFileList] = useState([]);
 
-    const cities = ['Delhi', 'Mumbai', 'Kolkata', 'Chennai', 'Bangalore','Hyderabad','Pune','Nagpur','Kochi','Trivendrum','Indore'];
+    const cities = ['Delhi', 'Mumbai', 'Kolkata', 'Chennai', 'Bangalore','Hyderabad','Pune','Nagpur','Kochi','Trivendrum','Indore','vadodara'];
     const facilities = ['School', 'Hospital', 'Supermarket', 'Park', 'Mall', 'Metro', 'Bus Stop', 'Railway Station', 'Airport', 
     'Highway', 'Petrol Pump', 'ATM', 'Bank', 'Market', 'College'];
 
@@ -159,7 +159,7 @@ const EditProperty = ({property,setModalOpen}) => {
                         name="nearbyFacilities"
                         label="Nearby Facilities"
                         // rules={[{ required: true, message: 'Please select nearby facilities!' }]}
-                        className=' col-span-2'
+                        className='col-span-2 '
                     >
                         <Select mode="multiple" placeholder="Select nearby facilities" >
                             {facilities.map(facility => (
@@ -168,7 +168,7 @@ const EditProperty = ({property,setModalOpen}) => {
                         </Select>
                     </Form.Item>
 
-                    <div className=' col-span-2 flex items-center justify-center -mb-8'>
+                    <div className='flex items-center justify-center col-span-2 -mb-8 '>
                         <Form.Item>
                             <Button type="primary" htmlType="submit">
                                 Submit
