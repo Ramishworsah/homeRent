@@ -7,17 +7,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harshpx/Rentify.git"
+    "url": "git+https://github.com/Ramishworsah/HomeRentApp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ramishwor Sah",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/harshpx/Rentify/issues"
+    "url": "https://github.com/Ramishworsah/HomeRentApp/issues"
   },
-  "homepage": "https://github.com/harshpx/Rentify#readme",
-  "description": "",
+  "homepage": "https://github.com/Ramishworsah/HomeRentApp#readme",
+  "description": "A comprehensive Home Renting App built with Node.js and Express",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
