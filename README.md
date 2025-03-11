@@ -50,3 +50,29 @@ Follow these instructions to set up the project locally on your machine.
    ```bash
    git clone https://github.com/Ramishworsah/HomeRentApp.git
    cd HomeRentApp
+
+
+
+   
+## Features
+* Register/Login to our platform<br/>
+<img src="./client/src/assets/ss/0.png" style="max-width:700px"/>
+<img src="./client/src/assets/ss/00.png" style="max-width:700px"/>
+
+* Browse and explore properties (available in select cities)<br/>
+<img src="./client/src/assets/ss/1.png" style="max-width:700px"/> 
+
+* Apply filters to enhance your property search<br/>
+<img src="./client/src/assets/ss/5.png" style="max-width:700px"/> 
+
+* Get Quote on your email about the property you are interested in or Like/Dislike a property
+<img src="./client/src/assets/ss/3.png" style="max-width:700px"/>
+
+* List your property <br/>
+<img src="./client/src/assets/ss/2.png" style="max-width:700px"/> 
+
+* Edit/Delete listed property <br/>
+<img src="./client/src/asse ts/ss/4.png" style="max-width:700px"/> 
+
+* Get your liked properties at one place<br/>
+<img src="./client/src/assets/ss/6.png" style="max-width:700px"/>
